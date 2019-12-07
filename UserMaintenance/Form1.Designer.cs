@@ -32,6 +32,7 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtFullName = new System.Windows.Forms.TextBox();
             this.lblFullName = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listUsers
@@ -45,7 +46,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(458, 189);
+            this.btnAdd.Location = new System.Drawing.Point(458, 213);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(262, 43);
             this.btnAdd.TabIndex = 1;
@@ -69,6 +70,16 @@
             this.lblFullName.TabIndex = 3;
             this.lblFullName.Text = "label1";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(458, 279);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(262, 43);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Fájlba írás";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -76,6 +87,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.lblFullName);
             this.Controls.Add(this.txtFullName);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.listUsers);
             this.Name = "Form1";
@@ -91,6 +103,7 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox txtFullName;
         private System.Windows.Forms.Label lblFullName;
+        private System.Windows.Forms.Button button1;
     }
 }
 
